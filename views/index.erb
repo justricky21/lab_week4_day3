@@ -1,0 +1,9 @@
+<p>All the students:</p>
+
+<% for student in @students%>
+
+<p>Student called <%=student.format_name%> is <%=student.age%> years old.</p>
+<p>They were selected to house <%=student.house.name%>.</p>
+<p><a href="/students/<%=student.id%>">Student details</a></p>
+<br/>
+<%end%>
